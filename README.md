@@ -67,31 +67,38 @@ Make sure you have installed:
 ### **2️⃣ Install and Run Ollama Model**
 
 Pull and serve the **Phi-3** model:
-- ollama pull phi3
-
+```bash
+ollama pull phi3
+```
 
 (Optional) You can use Llama3 or Gemma2 instead:
-- ollama pull llama3
-
+```bash
+ollama pull llama3
+```
 
 Start Ollama:
-- ollama serve
+```bash
+ollama serve
+```
 
 ### **3️⃣ Setup the Backend (Local Server)**
 
-*Go to your server directory:*
-- cd server
-- npm install
-- node server.js
+Go to your server directory:
+```bash
+cd server
+npm install
+node server.js
+```
 
 
 If successful, you’ll see:
+
 ✅ Local AI server running on http://localhost:5050
 
 ### **4️⃣ Setup Chrome Extension**
 
 - Open Google Chrome
-- Go to → chrome://extensions/
+- Go to → *chrome://extensions/*
 - Enable Developer mode
 - Click Load unpacked
 - Select the extension/ folder

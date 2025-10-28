@@ -53,7 +53,6 @@ ai-browser-prototype/
 │
 └── README.md
 
-
 ---
 
 ## ⚙️ Setup Instructions
@@ -64,68 +63,63 @@ Make sure you have installed:
 - [Ollama](https://ollama.ai) (running locally)
 - Google Chrome (for testing the extension)
 
----
 
 ### **2️⃣ Install and Run Ollama Model**
 
 Pull and serve the **Phi-3** model:
-```bash
-ollama pull phi3
+- ollama pull phi3
 
 
 (Optional) You can use Llama3 or Gemma2 instead:
-
-ollama pull llama3
+- ollama pull llama3
 
 
 Start Ollama:
-
-ollama serve
+- ollama serve
 
 ### **3️⃣ Setup the Backend (Local Server)**
 
-Go to your server directory:
-
-cd server
-npm install
-node server.js
+*Go to your server directory:*
+- cd server
+- npm install
+- node server.js
 
 
 If successful, you’ll see:
-
 ✅ Local AI server running on http://localhost:5050
 
 ### **4️⃣ Setup Chrome Extension**
 
-Open Google Chrome
+- Open Google Chrome
+- Go to → chrome://extensions/
+- Enable Developer mode
+- Click Load unpacked
+- Select the extension/ folder
+- Pin the 🧠 Mini AI Summarizer icon to your toolbar
 
-Go to → chrome://extensions/
+### **5️⃣ Test It Out**
 
-Enable Developer mode
+- Open any article or blog
+- Click the 🧠 icon → “Summarize Page”
+- Wait a few seconds…
+- See your offline AI summary generated locally by Phi-3 🚀
 
-Click Load unpacked
+---
 
-Select the extension/ folder
-
-Pin the 🧠 Mini AI Summarizer icon to your toolbar
-
-5️⃣ Test It Out
-
-Open any article or blog
-
-Click the 🧠 icon → “Summarize Page”
-
-Wait a few seconds…
-
-See your offline AI summary generated locally by Phi-3 🚀
-
-🧩 Troubleshooting
+## 🧩 Troubleshooting
 Problem	Possible Fix
+
 ❌ Backend error: Unexpected token '<'	Ensure your server is running at http://localhost:5050
+
 ⚠️ PayloadTooLargeError	Increase limit: app.use(express.json({ limit: "5mb" }))
+
 🚫 Could not establish connection	Reload the tab or re-enable the extension
+
 🧱 model runner has unexpectedly stopped	Restart Ollama: killall ollama && ollama serve
-🧠 Future Enhancements
+
+---
+
+## 🧠 Future Enhancements
 
 💬 Add multi-mode AI panel (Summarize / Explain / Simplify / Ask)
 
@@ -137,8 +131,12 @@ Problem	Possible Fix
 
 ⚙️ Model switcher for Phi-3 / Llama3 / Gemma2
 
-📜 License
+---
+
+## 📜 License
 
 MIT License © 2025 Yash Rawat
 
-<p align="center"> <b>Made with ❤️ and Phi-3 by Yash Rawat</b> </p> ```
+---
+
+<p align="center"> <b>Made with ❤️ and Phi-3 by Yash Rawat</b> </p>

@@ -82,7 +82,7 @@ Start Ollama:
 
 ollama serve
 
-3️⃣ Setup the Backend (Local Server)
+### **3️⃣ Setup the Backend (Local Server)**
 
 Go to your server directory:
 
@@ -95,7 +95,7 @@ If successful, you’ll see:
 
 ✅ Local AI server running on http://localhost:5050
 
-4️⃣ Setup Chrome Extension
+### **4️⃣ Setup Chrome Extension**
 
 Open Google Chrome
 

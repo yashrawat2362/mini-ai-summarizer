@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mini AI Summarizer 🧠</title>
+    <style>
+      :root {
+        --bg-color: #f8f9fa;
+        --text-color: #222;
+        --btn-bg: #007bff;
+        --btn-hover: #0056b3;
+        --output-bg: #ffffff;
+      }
+
+      body.dark {
+        --bg-color: #1e1e1e;
+        --text-color: #f0f0f0;
+        --btn-bg: #4444aa;
+        --btn-hover: #333388;
+        --output-bg: #2a2a2a;
+      }
+
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        width: 420px;
+        height: 520px;
+        padding: 16px;
+        background: var(--bg-color);
+        color: var(--text-color);
+        transition: background 0.3s, color 0.3s;
+        overflow-y: auto;
+      }
+
+      h1 {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 12px;
+      }
+
+      .button-row {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 12px;
+      }
+
+      button {
+        flex: 1;
+        padding: 8px;
+        background-color: var(--btn-bg);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      button:hover {
+        background-color: var(--btn-hover);
+      }
+
+      #output {
+        white-space: pre-wrap;
+        background: var(--output-bg);
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 10px;
+        height: 360px;
+        overflow-y: auto;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      #toggle-theme {
+        font-size: 12px;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 8px;
+        opacity: 0.8;
+      }
+
+      #toggle-theme:hover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mini AI Summarizer by Yash</h1>
+
+    <div class="button-row">
+      <button id="summarize">Summarize</button>
+      <button id="copy">Copy</button>
+      <button id="clear">Clear</button>
+    </div>
+
+    <div id="output">Your summary will appear here...</div>
+    <div id="toggle-theme">🌗 Toggle Dark/Light Mode</div>
+    <!-- <div id="">Made by Yash Rawat</div> -->
+
+    <script src="popup.js"></script>
+  </body>
+</html>

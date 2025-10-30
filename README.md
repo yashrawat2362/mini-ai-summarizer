@@ -31,30 +31,6 @@ It’s your personal offline **Comet-like** AI summarizer.
 
 ---
 
-## 🗂️ Project Structure
-
-ai-browser-prototype/
-│
-├── extension/
-│ ├── manifest.json
-│ ├── popup.html
-│ ├── popup.js
-│ ├── content.js
-│ ├── style.css
-│ └── icons/
-│ ├── icon16.png
-│ ├── icon48.png
-│ └── icon128.png
-│
-├── server/
-│ ├── server.js
-│ ├── package.json
-│ └── package-lock.json
-│
-└── README.md
-
----
-
 ## ⚙️ Setup Instructions
 
 ### **1️⃣ Prerequisites**
